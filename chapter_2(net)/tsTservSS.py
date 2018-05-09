@@ -12,6 +12,7 @@ ADDR = (HOST,PORT)
 class MyRequestHandler(SRH):
     def handle(self):
         print('....connected from:', self.client_address)
+        print(self.rfile.readline())
         self.wfile.write('[%b] %b'.encode('utf-8') %(ctime().encode('utf-8'),self.rfile.readline()))
 
 tcpServ = TCP(ADDR, MyRequestHandler)
