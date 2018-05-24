@@ -1,3 +1,6 @@
+# 来源
+# https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/0014320027235877860c87af5544f25a8d
+# eeb55141d60c5000
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 import random
@@ -19,7 +22,7 @@ width = 60 * 4
 height = 60
 image = Image.new('RGB', (width, height), (255, 255, 255))
 # 创建Font对象:
-font = ImageFont.truetype('Arial.ttf', 36)
+font = ImageFont.truetype('arial.ttf', 36)
 # 创建Draw对象:
 draw = ImageDraw.Draw(image)
 # 填充每个像素:
