@@ -5,6 +5,7 @@ import time
 
 # 获取并加载图像
 im = Image.open('test.jpg')
+im = im.convert('RGB')
 
 width = im.size[0]
 height = im.size[1]
@@ -72,3 +73,4 @@ with open('pic_to_html.html','w+') as html:
     for i_code in pic_html:
         html.write(i_code)
     html.write(end_code)
+
